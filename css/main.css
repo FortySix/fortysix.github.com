@@ -19,12 +19,12 @@
 }
 
 .halo{
-display: block;
-height: 4px;
-background: #425895;
-margin: 0 auto;
-max-width: 8em;
-width: 20%;
+	display: block;
+	height: 4px;
+	background: #425895;
+	margin: 0 auto;
+	max-width: 8em;
+	width: 20%;
 }
 
 .header img{
@@ -42,7 +42,7 @@ width: 20%;
 	background-size: 1600px 500px;
 	max-height: 500px;
 	width: 100%;
-	padding: 13% 0;
+	padding: 8% 0;
 }
 
 
@@ -52,5 +52,6 @@ width: 20%;
 	display: block;
 	text-align: center;
 	line-height: 1.1em;
-	width: 100%;
+	width: 90%;
+	padding: 5%;
 }
