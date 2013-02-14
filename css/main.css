@@ -20,15 +20,18 @@
 
 .halo{
 display: block;
-width: 8em;
 height: 4px;
 background: #425895;
 margin: 0 auto;
+max-width: 8em;
+width: 25%;
 }
 
 .header img{
 	display: block;
 	margin: 3% auto;
+	max-width: 100px;
+	width: 25%;
 }
 
  /* Banner
