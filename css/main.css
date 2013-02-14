@@ -6,7 +6,8 @@
 
 /* Table of Contents
 ==================================================
-    #Header*/
+    #Header
+    #Banner*/
 
 
  /* #Header
@@ -19,13 +20,34 @@
 
 .halo{
 display: block;
-width: 7em;
+width: 8em;
 height: 4px;
-background: #5998ff;
+background: #425895;
 margin: 0 auto;
 }
 
 .header img{
 	display: block;
-	margin: 20px auto;
+	margin: 35px auto;
+}
+
+ /* Banner
+================================================== */
+
+.banner {
+	background: transparent url(../img/banner.jpg) 0 0 no-repeat;
+	background-size: 1600px 500px;
+	height: 500px;
+	width: 100%;
+}
+
+
+.essence{
+	font-size: 20px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 1.1em;
+	width: 100%;
+	padding: 200px 0 0 0;
 }
