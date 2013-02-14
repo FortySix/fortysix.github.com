@@ -38,8 +38,8 @@
 ================================================== */
 
 .banner {
-	background: transparent url(../img/banner.jpg) 0 0 no-repeat;
-	background-size: 1600px 500px;
+	background: #000 url(../img/banner.jpg) center center no-repeat;
+	background-size: cover;
 	max-height: 500px;
 	width: 100%;
 	padding: 8% 0;
