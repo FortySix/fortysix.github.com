@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	$(".essence").fitText(1.6, {minFontSize: '18px', maxFontSize: '45px'});
 
 	isStarsVisible = true;
@@ -29,7 +30,7 @@ $(document).ready(function() {
 		}, 2000);
 	}
 
-	for(var i = 0; i < 20; i ++)
+	for(var i = 0; i < 10; i ++)
 	{
 		$stars.append('<div class="star" />');
 	}
