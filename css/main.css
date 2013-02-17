@@ -54,6 +54,7 @@
 	padding: 15% 5%;
 	line-height: 1.2;
 	-webkit-animation: appear 0.5s ease-in;
+	-webkit-animation-delay:.6s;
     -webkit-animation-fill-mode: both;
 }
 
