@@ -10,6 +10,10 @@ $(document).ready(function() {
 
 	$stars = $('#stars');
 
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		isStarsVisible = false;
+	}
+
 
 	function twinkle(v)
 	{
