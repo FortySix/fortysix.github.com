@@ -53,3 +53,17 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 ================================================== */
 	a { color: #333; text-decoration: underline; outline: 0; }
 	a:hover, a:focus { color: #000; }
+
+
+/* #Animations
+================================================== */
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } 
+}
+
+

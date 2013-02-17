@@ -53,6 +53,8 @@
 	width: 90%;
 	padding: 15% 5%;
 	line-height: 1.2;
+	-webkit-animation: appear 0.5s ease-in;
+    -webkit-animation-fill-mode: both;
 }
 
 @-moz-keyframes fadeIn {
