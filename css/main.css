@@ -56,6 +56,15 @@
 	-webkit-animation: appear 0.5s ease-in;
 	-webkit-animation-delay:.6s;
     -webkit-animation-fill-mode: both;
+    -moz-animation: appear 0.5s ease-in;
+	-moz-animation-delay:.6s;
+    -moz-animation-fill-mode: both;
+    -ms-animation: appear 0.5s ease-in;
+	-ms-animation-delay:.6s;
+    -ms-animation-fill-mode: both;
+    	animation: appear 0.5s ease-in;
+		animation-delay:.6s;
+    	animation-fill-mode: both;
 }
 
 @-moz-keyframes fadeIn {
