@@ -66,4 +66,20 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
     opacity: 1; } 
 }
 
+@-moz-keyframes appear {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } 
+}
+
+@-ms-keyframes appear {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } 
+}
+
 
