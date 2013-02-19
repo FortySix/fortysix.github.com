@@ -201,7 +201,7 @@
 
 	}
 
-	@media (max-device-width: 768px) and (orientation: portrait) { 
+	@media (min-device-width: 768px) and (orientation: portrait) and (max-device-width: 959px) { 
 	.leftbar{
 		margin-left: 10px;
 	}
