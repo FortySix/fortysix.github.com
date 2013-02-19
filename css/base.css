@@ -31,6 +31,7 @@
 		font: 18px/1.7 "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 		color: #3a3a3a;
 		-webkit-text-size-adjust: 100%;
+		font-weight: 400;
  }
 
 /* #Typography
@@ -54,8 +55,8 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 
 /* #Links
 ================================================== */
-	a { color: #333; text-decoration: underline; outline: 0; }
-	a:hover, a:focus { color: #000; }
+	a { color: #5998ff; outline: 0; }
+	a:hover, a:focus { color: #425895; }
 
 
 /* #Animations
