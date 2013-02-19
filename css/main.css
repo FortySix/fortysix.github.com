@@ -150,9 +150,7 @@
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-		.leftbar{
-			padding-left: 10px;
-		}
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -162,7 +160,9 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-
+		.leftbar{
+			padding-left: 10px;
+		}
 
 	}
 
