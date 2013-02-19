@@ -156,6 +156,9 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.leftbar {
+			margin-left: 20px;
+		}
 
 	}
 
@@ -201,10 +204,5 @@
 
 	}
 
-	@media (min-device-width: 768px) and (orientation: portrait) and (max-device-width: 959px) { 
-	.leftbar{
-		margin-left: 10px;
-	}
-	}
 
 
