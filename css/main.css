@@ -178,5 +178,11 @@
 			padding-left: 0px;
 		}
 
+		.leftbar p{
+			font-size: 21px;
+			line-height: 1.5em;
+			font-weight: 300;
+		}
+
 	}
 
