@@ -45,6 +45,7 @@
 	background-size: cover;
 	height: 100%;
 	width: 100%;
+	margin: 0 0 80px 0;
 }
 
 
@@ -182,6 +183,10 @@
 			font-size: 24px;
 			line-height: 1.4em;
 			font-weight: 300;
+		}
+
+		.banner{
+			margin-bottom: 20px;
 		}
 
 	}
