@@ -108,6 +108,11 @@
  /* #Content
 ================================================== */
 
+.about {
+	padding-bottom: 120px;
+}
+
+
 .bluetitle{
 	color: #425895;
 	margin: 40px 0 30px 0;
@@ -145,6 +150,22 @@
 
  /* #Work
 ================================================== */
+
+.work{
+	background: #fff;
+	padding: 5% 0;
+}
+
+.work img{
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.work p{
+	padding: 7% 5%;
+}
 
 /* #Media Queries
 ================================================== */
@@ -199,6 +220,7 @@
 			margin-bottom: 20px;
 			font-size: 16px;
 			line-height: 1.5;
+			text-align: center;
 		}
 
 
