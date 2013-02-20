@@ -117,7 +117,7 @@
 
 .bluetitle{
 	color: #425895;
-	margin: 40px 0 30px 0;
+	margin: 40px 0 25px 0;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -129,14 +129,13 @@
 	font-weight: 300;
 }
 
-
 .redbutton {
 	background: #5998ff;
 	color: #fff;
 	font-size: .8em;
 	padding: .6em 1.4em;
 	font-weight: 700;
-	margin: .5em auto;
+	margin: 0 auto;
 	text-shadow: none;
 	text-decoration: none;
 	display: inline-block;
@@ -234,9 +233,6 @@
 			margin-bottom: 20px;
 			font-size: 16px;
 			line-height: 1.5;
-		}
-
-		.work {
 			text-align: center;
 		}
 
