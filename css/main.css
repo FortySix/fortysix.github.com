@@ -10,6 +10,8 @@
     #Banner
 	#Content
 	#Work
+	#Footer
+	#Media Queries
     */
 
 
@@ -165,6 +167,17 @@
 
 .work p{
 	padding: 7% 5%;
+	font-style: italic;
+}
+
+ /* #Footer
+================================================== */
+
+.footer p{
+	font-size: 12px;
+	padding: 5% 0;
+	margin: 0 auto;
+	text-align: center;
 }
 
 /* #Media Queries
