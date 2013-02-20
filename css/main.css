@@ -135,7 +135,7 @@
 	font-size: .8em;
 	padding: .6em 1.4em;
 	font-weight: 700;
-	margin: 0 auto;
+	margin: 10px auto;
 	text-shadow: none;
 	text-decoration: none;
 	display: inline-block;
@@ -144,9 +144,9 @@
 .redbutton:hover{
 	background: #425895;
 	color: #fff;
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
 }
 
  /* #Work
