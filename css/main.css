@@ -21,15 +21,8 @@
 .stripe{
 	width: 100%;
 	background: #e9eef6;
-}
-
-.halo{
 	display: block;
 	height: 4px;
-	background: #425895;
-	margin: 0 auto;
-	max-width: 100px;
-	width: 15%;
 }
 
 .header img{
