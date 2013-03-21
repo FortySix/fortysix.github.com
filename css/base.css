@@ -55,7 +55,7 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 
 /* #Links
 ================================================== */
-	a { color: #5998ff; outline: 0; }
+	a { color: #5998ff; outline: 0; text-decoration: none;}
 	a:hover, a:focus { color: #425895; }
 
 

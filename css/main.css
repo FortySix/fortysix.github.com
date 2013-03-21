@@ -122,7 +122,7 @@
 	font-weight: 300;
 }
 
-.redbutton {
+.bluebutton {
 	background: #5998ff;
 	color: #fff;
 	font-size: .8em;
@@ -134,7 +134,7 @@
 	display: inline-block;
 }
 
-.redbutton:hover{
+.bluebutton:hover{
 	background: #425895;
 	color: #fff;
 	-webkit-transition: all .3s ease-in-out;
