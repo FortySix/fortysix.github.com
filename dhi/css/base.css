@@ -79,11 +79,11 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 
 	@font-face {
 	    font-family: 'entypo';
-	    src: url('icons/entypo.eot');
-	    src: url('icons/entypo.eot?iefix') format('eot'),
-	         url('icons/entypo.woff') format('woff'),
-	         url('icons/entypo.ttf') format('truetype'),
-	         url('icons/entypo.svg#entypo') format('svg');
+	    src: url('../icons/entypo.eot');
+	    src: url('../icons/entypo.eot?iefix') format('eot'),
+	         url('../icons/entypo.woff') format('woff'),
+	         url('../icons/entypo.ttf') format('truetype'),
+	         url('../icons/entypo.svg#entypo') format('svg');
 	    font-weight: normal;
 	    font-style: normal; }
 
