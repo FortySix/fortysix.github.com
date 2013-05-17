@@ -188,7 +188,7 @@
 
 .contact{
 	margin: 50px 0 0 0;
-	text-align: center;
+	text-align: right;
 }
 
 
@@ -212,6 +212,12 @@
 		.navigation li{line-height: 3.0}
 		.orangebutton a{ line-height: 2.0}
 
+		.footer { text-align:  center;}
+		.borderright { border: none;}
+		.contact { text-align: center;}
+
+		.footertext { text-align: center; padding-top: 80px}
+		.copyright { text-align: center;}
 
 	}
 
