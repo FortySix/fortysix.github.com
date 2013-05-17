@@ -1,0 +1,235 @@
+/*
+* Created by FortySix(46.io)
+* Dental Health International
+* May 2013
+*/
+
+
+/* Table of Contents
+==================================================
+    #Header
+    #Banner
+    #Content
+    #Footer
+	#Media Queries
+    */
+
+
+ /* #Header
+================================================== */
+
+
+#logo{
+	font-family: 'Merriweather', serif;
+	font-size: 2.6rem;
+	text-align: center;
+	width: 200px;
+	margin: 20px 0 20px 0px;
+}
+
+#logo a{
+	text-decoration: none;
+	color: #2badaf;
+}
+
+#logo span{
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;	
+	font-size: 1.8rem;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	color: #45626a;
+}
+
+.navigation{
+	margin: 30px 0;
+	text-align: right;
+}
+
+.navigation a{
+	color: #45626a;
+	padding-bottom: 3px;
+}
+
+.navigation a:hover{
+	border-bottom: 2px solid #31c0c2;
+	opacity: .8;
+}
+
+.active{
+	border-bottom: 2px solid #31c0c2;
+}
+
+.navigation li{
+	list-style-type: none;
+	display: inline;
+	margin: 0 20px 0 0;
+}
+
+.orangebutton a{
+	background: #ff7c6c;
+	color: #fff;
+	padding: .1em 1em .2em 1em;
+	text-shadow: none;
+	text-decoration: none;
+	display: inline-block;
+	
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.orangebutton a:hover{
+	background: #f9604d;
+	opacity: 1.0;
+	border-bottom: none;
+}
+
+
+
+ /* #Banner
+================================================== */
+
+
+.banner { 
+	width: 100%; 
+	height: 650px; 
+	overflow: hidden;
+	background: #f2f2f2 url(../img/roomcloseup.jpg) center center no-repeat;
+	background-size: 1600px 800px;
+}
+
+.tagline{
+	font-size: 5.0rem;
+	font-weight: 200;
+	line-height: 1.2;
+	background: #3c91cc;
+	color: #fff;
+	height: 160px;
+	width: 100%;
+	padding: 0px;
+	margin-top: 430px;
+	opacity: .85;
+}
+
+.tagline p{
+	padding: 10px 0 0 20px;
+}
+
+ /* #Content
+================================================== */
+
+.mission{
+	margin: 80px 0 100px 0;
+}
+
+.mission h4{
+	margin: 0 0 20px 0;
+	color:#3c91cc; 
+}
+
+ /* #Footer
+================================================== */
+
+.footer{
+	padding: 80px 0 0 0;
+	background:#344559;
+	height: 220px;
+}
+
+.footer h5{
+	color: #2badaf;
+	margin: 0 0 15px 0;
+}
+
+.footer p{
+	color: #fff;
+}
+
+.footer span{
+	font-weight: 600;
+}
+
+.icon{
+	font-size: 5.0rem;
+	margin-right: 5px;
+	line-height: 0;
+}
+
+.borderright{
+	border-right: 1px solid #fff;
+}
+
+.borderbottom{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 30px;
+}
+
+.footer a{
+	color:#3c91cc;
+	text-transform: uppercase;
+}
+
+.footer a:hover{
+	opacity: .8;
+}
+
+.footertext{
+	background:#344559;
+}
+
+.footertext p{
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.copyright{
+	text-align: right;
+}
+
+.contact{
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		.banner{height:350px;}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#logo { margin: 30px auto 20px auto;}
+		.navigation { margin: 10px auto 40px auto; text-align: center;}
+		.navigation li{line-height: 3.0}
+		.orangebutton a{ line-height: 2.0}
+
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+      
+
+	}
+
+
+
+
+
+
+
