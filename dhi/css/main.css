@@ -9,8 +9,10 @@
 ==================================================
     #Header
     #Banner
-    #Content
+    #Content[Home]
+    #Services
     #Footer
+
 	#Media Queries
     */
 
@@ -104,18 +106,19 @@
 	line-height: 1.2;
 	background: #3c91cc;
 	color: #fff;
-	height: 160px;
-	width: 100%;
+	height: auto;
+	width: auto;
 	padding: 0px;
 	margin-top: 430px;
 	opacity: .85;
 }
 
 .tagline p{
-	padding: 10px 0 0 20px;
+	padding: 10px 0 25px 0;
+	text-align: center;
 }
 
- /* #Content
+ /* #Content[Home]
 ================================================== */
 
 .mission{
@@ -126,6 +129,48 @@
 	margin: 0 0 20px 0;
 	color:#3c91cc; 
 }
+
+ /* #Services
+================================================== */
+
+.procedures{
+	margin: 80px 0 100px 0;	
+}
+
+.procedures a{
+	margin: 0 0 20px 0;
+}
+
+.procedures dd{
+	font-size: 1.5rem;
+	line-height: 1.4;
+	padding: 10px;
+}
+
+.procedures dt{
+	line-height: 2.0;
+}
+
+.procedures h5{
+	color:#3c91cc; 
+	margin: 0 0 30px 0;
+}
+
+.topbar{
+	border-top: 2px solid #c5d1df;
+	padding: 15px 0 0 0;
+}
+
+.treatment{
+	margin: 80px 0 100px 0;
+}
+
+.treatment h5{
+	color:#3c91cc; 
+	margin: 0 0 30px 0;
+}
+
+
 
  /* #Footer
 ================================================== */
@@ -187,8 +232,7 @@
 }
 
 .contact{
-	margin: 50px 0 0 0;
-	text-align: right;
+	text-align: center;
 }
 
 
@@ -217,8 +261,9 @@
 		.borderright { border: none;}
 		.contact { text-align: center;}
 
-		.footertext { text-align: center; padding-top: 80px}
+		.footertext { text-align: center; padding-top: 150px}
 		.copyright { text-align: center;}
+		.contact { padding: 30px 0 0 0; }
 
 	}
 
