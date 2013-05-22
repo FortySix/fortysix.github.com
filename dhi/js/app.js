@@ -33,7 +33,30 @@
  }
 
  else if ($('.ourteam').length > 0){
- $(".banner").backstretch("img/group.jpg");   
+ $(".banner").backstretch("img/group.jpg");
+
+
+(function($) {
+    
+       $('.readmore').hide();
+       $('.desc a').click(function(){
+          if ($(this).hasClass('selected')) {
+               $(this).removeClass('selected');
+               $(this).prev().slideUp();
+               $(this).text("Read More");
+          } else {
+               $('.desc a').removeClass('selected');
+               $(this).addClass('selected');
+               $('.readmore').slideUp();
+               $('.desc a').text("Read More");
+               $(this).prev().slideDown();
+                $(this).text("Read Less");
+          }
+          return false;
+       });
+
+})(jQuery);
+
  }
 
 
