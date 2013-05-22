@@ -12,6 +12,7 @@
     #Content[Home]
     #Services
     #OurTeam
+    #ContactUs
     #Footer
 	#Media Queries
     */
@@ -156,11 +157,6 @@
 	margin: 0 0 30px 0;
 }
 
-.topbar{
-	border-top: 2px solid #c5d1df;
-	padding: 15px 0 0 0;
-}
-
 .treatment{
 	margin: 80px 0 100px 0;
 }
@@ -195,6 +191,21 @@
 	margin: 0 0 30px 0;
 }
 
+ /* #ContactUs
+================================================== */
+
+.contactinfo{
+	margin: 80px 0 100px 0;	
+}
+
+.contactinfo h5{
+	color:#3c91cc; 
+	margin: 0 0 20px 0;
+}
+
+.contactinfo span{
+	font-weight: 600;
+}
 
 
  /* #Footer
@@ -289,6 +300,7 @@
 		.footertext { text-align: center; padding-top: 150px}
 		.copyright { text-align: center;}
 		.contact { padding: 30px 0 0 0; }
+		.contactinfo iframe {height: 300px;}
 
 	}
 

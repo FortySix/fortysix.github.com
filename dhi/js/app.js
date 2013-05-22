@@ -61,7 +61,7 @@
 
 
  else if ($('.contactus').length > 0){
- $(".banner").backstretch("img/group.jpg");   
+ $(".banner").backstretch("img/outside.jpg");   
  }
 
 
