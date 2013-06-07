@@ -1,0 +1,12 @@
+/* Main
+================================================== */
+
+.container{
+	margin: 0 auto;
+	width: 500px;
+	background: grey;
+}
+
+.films li{
+	text-align: center;
+}
