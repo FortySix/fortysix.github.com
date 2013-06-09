@@ -62,7 +62,7 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 
 /* #Links
 ================================================== */
-	a { color: #333; text-decoration: underline; outline: 0; }
+	a { color: #fff; text-decoration: underline; outline: 0; }
 	a:hover, a:focus { color: #000; }
 
 
