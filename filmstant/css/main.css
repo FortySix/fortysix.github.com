@@ -9,7 +9,7 @@
 
 .header{
 	width: 100%;
-	height: 70px;
+	height: 65px;
 	background: rgb(13,20,30);
 	background: rgba(13,20,30, 0.5); 
 	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
@@ -21,7 +21,7 @@
 .header h1{
 	padding: 15px 0 0 0;
 	font-weight: 300;
-	font-size: 3.2rem;
+	font-size: 2.9rem;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 1px rgba(7, 10, 14, .3);
 	letter-spacing: 3px;
@@ -29,14 +29,91 @@
 
 /* Main
 ================================================== */
+
+ .container{ 
+ 	width:100%; 
+ 	max-width: 730px;
+ 	margin: 0 auto; 
+ 	padding: 0; 
+ }
+
 .films{
 	margin-top: 150px;
 }
-.films li{
-	text-align: center;
+
+
+.movielist li{
 	z-index: 0;
 	background: rgb(13,20,30);
 	background: rgba(13,20,30, 0.5); 
-	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+	box-shadow: 0 0 7px 5px rgba(0, 0, 0, .2);
 	margin: 0 0 50px 0;
 }
+
+/* Poster side
+================================================== */
+
+.postercolumn{
+	width: 24.657534246%;
+	display: inline-block;
+}
+
+.postercolumn a{
+	background: #2a4b85;
+	width: 100%;
+	padding: 5px 0 5px 0;
+	display: inline-block;
+	text-shadow: none;
+	text-decoration: none;
+	text-align: left;
+}
+
+.postercolumn a:hover{
+	background: #3498DB;
+}
+
+.postercolumn span{
+	float: left;
+	font-size: 5.0rem;
+	line-height: 0;
+	padding: 7px 15px 5px 18px;
+}
+
+.blueer a{
+	background: #1a2b49;
+}
+
+.blueer a:hover{
+	background: #2980B9;
+}
+
+.blueer span{
+	padding: 5px 18px 5px 22px;
+	line-height: 0;
+	font-size: 6.0rem;
+}
+
+.postercolumn img{
+	margin-bottom:-7px;
+}
+
+/* Info side
+================================================== */
+
+.infocolumn{
+	width: 75.342465754%;
+	display: inline-block;
+}
+
+.infocolumn h2{
+	font-weight: 300;
+	font-size: 4.0rem;
+	padding-left: 10px;
+}
+
+.reviewbox{
+	background: #101720;
+}
+
+
+
