@@ -148,6 +148,14 @@
 	width: 120px;
 }
 
+.red{
+	background: #e74c3c;
+}
+
+.green{
+	background: #2ecc71;
+}
+
 .scores{
 	display: inline-block;
 	text-align: center;
