@@ -137,24 +137,18 @@
 }
 
 .audiencebox{
-	background: #2ecc71;
 	height: 120px;
 	width: 120px;
+	background: #2ecc71;
 }
+
 
 .criticbox{
-	background: #e74c3c;
 	height: 120px;
 	width: 120px;
-}
-
-.red{
-	background: #e74c3c;
-}
-
-.green{
 	background: #2ecc71;
 }
+
 
 .scores{
 	display: inline-block;
