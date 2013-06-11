@@ -1,7 +1,10 @@
 $.backstretch("img/topbg.jpg");
 
+
 $(document).ready(function() {
 
+
+ $("#LoadingImage").show();
 
   $.ajax({
 
@@ -9,18 +12,34 @@ $(document).ready(function() {
 
     dataType: "jsonp",
 
-    success: searchCallback
+    beforeSend:function(){
+    // Spinner
+    $('.loading').show();
+  	},
+
+    success: searchCallback,
+
+
+    error:function(){
+    // failed request
+    $('.loading').empty();
+    $('.loading').html('<h1>!</h1>');
+  	}
 
   });
+
 
 
 
 });
 
 
+
 // callback for when we get back the results
 function searchCallback(data) {
 
+
+$('.loading').hide();
 
  var movies = data.movies;
  var movTitle;

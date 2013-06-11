@@ -45,7 +45,7 @@
 .movielist li{
 	z-index: 0;
 	background: rgb(13,20,30);
-	background: rgba(13,20,30, 0.5); 
+	background: rgba(13,20,30, 0.4); 
 	box-shadow: 0 0 7px 5px rgba(0, 0, 0, .2);
 	margin: 0 0 50px 0;
 }
@@ -169,4 +169,74 @@
 }
 
 
+/* Loading Spinner
+================================================== */
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+  from { -o-transform: rotate(0deg); }
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Loading animation container */
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+}
+
+/* Spin track (outer circle) */
+.loading .track {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  top: 2px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Spinning circle (inner circle) */
+.loading .maskedCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  border: 3px solid white;
+}
+
+/* Spinning circle mask */
+.loading .mask {  
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+}
+
+/* Spinner */
+.loading .spinner {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  -webkit-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
 
