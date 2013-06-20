@@ -33,10 +33,11 @@
 		font-size: 1.8rem;
 		line-height: 2.7rem;
 
-		background-image: url(../img/topbg.jpg), url(../img/bg.jpg);
+		background-image: url(../img/bg.jpg);
 		background-position: 0 0;
-		background-repeat: no-repeat, repeat;
-		background-size: cover, 100px 100px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
 
 		font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 		color: #fff;

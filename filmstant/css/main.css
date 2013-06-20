@@ -66,7 +66,7 @@
 	background: rgb(13,20,30);
 	background: rgba(13,20,30, 0.4); 
 	box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);
-	margin: 0 0 50px 0;
+	margin: 0 0 80px 0;
 }
 
 /* Poster side
@@ -136,7 +136,7 @@
 }
 
 .reviewbox{
-	background: #101720;
+	background: #071118;
 	height: 240px;
 	width: 430px;
 	display: inline-block;
