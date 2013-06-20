@@ -13,7 +13,8 @@
 	background: rgb(13,20,30);
 	background: rgba(13,20,30, 0.5); 
 	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
-	top: 0;
+	position: fixed; z-index: 9999; top: 0px; bottom: auto; 
+	display: block;
 }
 
 .header h1{
@@ -23,7 +24,9 @@
 	text-transform: uppercase;
 	text-shadow: 2px 2px 1px rgba(7, 10, 14, .3);
 	letter-spacing: 3px;
+	text-align: center;
 }
+
 
 /* Main
 ================================================== */
@@ -139,11 +142,37 @@
 	background: #2ecc71;
 }
 
+.audiencebox a{
+	text-decoration: none;
+}
+
+.audiencebox:hover{
+	background: #3cee84;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
 
 .criticbox{
 	height: 120px;
 	width: 120px;
 	background: #2ecc71;
+}
+
+.criticbox a{
+	text-decoration: none;
+}
+
+.criticbox:hover{
+	background: #3cee84;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 
 
