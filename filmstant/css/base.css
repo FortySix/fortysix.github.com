@@ -32,8 +32,12 @@
 	body {
 		font-size: 1.8rem;
 		line-height: 2.7rem;
-		background: transparent url(../img/bg.jpg) 0 0 repeat;
-		background-size:100px 100px;
+
+		background-image: url(../img/topbg.jpg), url(../img/bg.jpg);
+		background-position: 0 0;
+		background-repeat: no-repeat, repeat;
+		background-size: cover, 100px 100px;
+
 		font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 		color: #fff;
 		-webkit-text-size-adjust: 100%;
@@ -144,6 +148,61 @@ hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 3
 	-moz-animation-name: fadeInUp;
 	-o-animation-name: fadeInUp;
 	animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
 }
 
 @-webkit-keyframes fadeInLeft {

@@ -1,6 +1,3 @@
-$.backstretch("img/topbg.jpg");
-
-
 $(window).scroll(function() {
     if ($(this).scrollTop()) {
         $('#toTop').fadeIn();
