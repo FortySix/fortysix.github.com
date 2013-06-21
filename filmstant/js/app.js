@@ -39,8 +39,6 @@ $(document).ready(function() {
   });
 
 
-
-
 });
 
 
@@ -92,6 +90,14 @@ $('.loading').hide();
 
  });
 
+
+     var docHeight = $(document).height();
+        var footerHeight = $('#footer').height();
+        var footerTop = $('#footer').position().top + footerHeight;
+
+        if (footerTop < docHeight) {
+            $('#footer').css('margin-top', 400 + (docHeight - footerTop) + 'px');
+        }
 
 }
 
