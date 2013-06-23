@@ -13,12 +13,22 @@ $("#toTop").click(function() {
 
 $(document).ready(function() {
 
+var apiurl;
+
+if($("#homeflag").length > 0) {
+    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
+}
+
+if($("#upcomingflag").length > 0) {
+    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?limit=6&country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
+}
+
 
  $("#LoadingImage").show();
 
   $.ajax({
 
-    url: 'http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=qsrc3nwb5xsuvwbnv6xazzc3',
+    url: apiurl,
 
     dataType: "jsonp",
 
@@ -61,7 +71,7 @@ $('.loading').hide();
 	//Javascript needs to be refactored/tweaked heavily and html moved out.
 	//Format Date better
 
-	if (movie.title.length > 23){
+	if (movie.title.length > 21){
 		var length = 20;
 		movTitle = movie.title.substring(0,length);
 		movTitle = movTitle+'...';
