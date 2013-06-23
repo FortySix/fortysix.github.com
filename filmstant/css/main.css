@@ -356,6 +356,40 @@ text-align: center;
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		 .container{ 
+ 			width: 530px;
+			height: 330px;
+ 			margin: 0 auto; 
+ 			padding: 0; 
+		 }
+
+		.postercolumn{
+			width: 130px;
+		}
+
+		.postercolumn img{
+			width: 130px;
+			height: 190px;
+		}
+
+		.postercolumn a{
+			font-size: 1.4rem;
+		}
+
+		.postercolumn span{
+			font-size: 4.0rem;
+			padding: 7px 10px 5px 10px;
+		}
+
+		.blueer span{
+			padding: 7px 16px 5px 12px;
+			font-size: 4.8rem;
+		}
+
+
+		.infocolumn{
+			width: 400px;
+		}	
 
 	
 
