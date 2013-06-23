@@ -37,7 +37,7 @@
 		background-image: url(../img/bg.jpg),url(../img/bgtile.jpg);
 		background-position: 0 0;
 		background-repeat: no-repeat, repeat;
-		background-size: 2000px 1000px, 100px 100px;
+		background-size: 100% 1000px, 100px 100px;
 
 		font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
 		color: #fff;
