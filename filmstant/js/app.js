@@ -11,6 +11,11 @@ $("#toTop").click(function() {
  });
 
 
+$(window).resize(function() {
+
+});
+
+
 $(document).ready(function() {
 
 var apiurl;
