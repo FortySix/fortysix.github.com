@@ -32,9 +32,9 @@ if($("#upcomingflag").length > 0) {
     dataType: "jsonp",
 
     beforeSend:function(){
+    $('#footer').hide();
     // Spinner
     $('.loading').show();
-    $('#footer').hide();
   	},
 
     success: searchCallback,
