@@ -110,7 +110,7 @@
 
 .bluetitle{
 	color: #425895;
-	margin: 40px 0 30px 0;
+	margin: 40px 0 25px 0;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -147,7 +147,7 @@
 
 .work{
 	background: #fff;
-	padding: 90px 0;
+	padding: 5% 0;
 }
 
 .work img{
@@ -165,34 +165,6 @@
 	margin-top: 40px;
 }
 
- /* #Clients
-================================================== */
-
-.clients{
-	padding: 90px 0;
-}
-
-.clients img{
-	opacity: .4;
-	margin: 0 auto;
-	display: block;
-}
-
-.clientlogos{
-	margin: 60px auto 20px auto;
-}
-
-.dhi{
-margin: 5px 0 0 0;
-}
-
-.upenn{
-}
-
-.sbp{
-margin: 15px 0 0 0;
-}
-
  /* #Footer
 ================================================== */
 
@@ -208,11 +180,6 @@ margin: 15px 0 0 0;
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-			.clients img{
-				width: 180px;
-				margin-bottom: 40px;
-			}
-			
 
 	}
 
@@ -260,6 +227,7 @@ margin: 15px 0 0 0;
 			line-height: 1.5;
 			text-align: center;
 		}
+
 
 	}
 
