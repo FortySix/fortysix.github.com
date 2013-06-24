@@ -64,6 +64,9 @@ $('.loading').hide();
  var style;
  var noSpaceMovTitle;
 
+ var noReview="No Reviews Yet...";
+ var noScore="N/A";
+
  $.each(movies, function(index, movie) {
 
 
@@ -72,15 +75,30 @@ $('.loading').hide();
 	//Format Date better
 
 	if (movie.title.length > 21){
-		var length = 20;
+		var length = 19;
 		movTitle = movie.title.substring(0,length);
 		movTitle = movTitle+'...';
 	}
-	else{
+
+	else {
 		movTitle = movie.title;
 	}
 
-	noSpaceMovTitle = movie.title.replace(/\s+/g, '');
+  noSpaceMovTitle = movie.title.replace(/\s+/g, '');
+
+  if (movie.critics_consensus === undefined){
+    movie.critics_consensus = noReview;
+  }
+
+  if (movie.ratings.critics_score == "-1"){
+    movie.ratings.critics_score = noScore;
+  }
+
+  if (movie.ratings.audience_score == "0"){
+    movie.ratings.audience_score = noScore;
+  }
+
+  
 
 
 
