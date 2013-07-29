@@ -43,14 +43,14 @@
           if ($(this).hasClass('selected')) {
                $(this).removeClass('selected');
                $(this).prev().slideUp();
-               $(this).text("Read More");
+               $(this).text("Lea Más");
           } else {
                $('.desc a').removeClass('selected');
                $(this).addClass('selected');
                $('.readmore').slideUp();
-               $('.desc a').text("Read More");
+               $('.desc a').text("Lea Más");
                $(this).prev().slideDown();
-                $(this).text("Read Less");
+                $(this).text("Lea Menos");
           }
           return false;
        });
