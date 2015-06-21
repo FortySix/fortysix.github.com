@@ -11,7 +11,7 @@
 
 .demobutton{
   background: #2F66E3;
-  font-family: Antenna-Regular;
+  font-family: Antenna;
   font-size: 10px;
   color: #FFFFFF;
   letter-spacing: 2px;
@@ -97,7 +97,7 @@
 }
 
 .dashtitle h6{
-  font-family: Antenna-Regular;
+  font-family: Antenna;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -124,7 +124,7 @@
 .actions a,
 .dashbutton a{
   border: 1px solid #2F66E3;
-  font-family: Antenna-Regular;
+  font-family: Antenna;
   font-size: 10px;
   color: #FFFFFF;
   letter-spacing: 2px;
