@@ -28,42 +28,42 @@
 ================================================== */
 
 @font-face {
-	font-family: Antenna-Regular;
+	font-family: Antenna;
 	font-style: normal;
 	font-weight: 300;
   	src: local('Antenna Regular'), local('Antenna-Regular'), url("../font/Antenna-Regular.otf") format("opentype");
 }
 
 @font-face {
-	font-family: Antenna-RegularItalic;
+	font-family: Antenna;
 	font-style: italic;
 	font-weight: 300;
   	src: local('Antenna RegularItalic'), local('Antenna-RegularItalic'), url("../font/Antenna-RegularItalic.otf") format("opentype");
 }
 
 @font-face {
-	font-family: Antenna-Light;
+	font-family: Antenna;
 	font-style: normal;
 	font-weight: 100;
   	src: local('Antenna Light'), local('Antenna-Light'), url("../font/Antenna-Light.otf") format("opentype");
 }
 
 @font-face {
-	font-family: Antenna-LightItalic;
+	font-family: Antenna;
 	font-style: italic;
 	font-weight: 100;
   	src: local('Antenna LightItalic'), local('Antenna-LightItalic'), url("../font/Antenna-LightItalic.otf") format("opentype");
 }
 
 @font-face {
-	font-family: Antenna-Bold;
+	font-family: Antenna;
 	font-style: Bold;
 	font-weight: 500;
   	src: local('Antenna Bold'), local('Antenna-Bold'), url("../font/Antenna-Bold.otf") format("opentype");
 }
 
 @font-face {
-	font-family: Antenna-BoldItalic;
+	font-family: Antenna;
 	font-style: italic;
 	font-weight: 500;
   	src: local('Antenna BoldItalic'), local('Antenna-BoldItalic'), url("../font/Antenna-BoldItalic.otf") format("opentype");
