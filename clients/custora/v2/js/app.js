@@ -127,25 +127,25 @@ galaxy = new function() {
     context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     context.strokeStyle = 'rgba(255,255,255, .3)';
-    context.moveTo(570,470);
-  	context.lineTo(600, 500);
-  	context.lineTo(708, 500);
+    context.moveTo(570,480);
+  	context.lineTo(600, 510);
+  	context.lineTo(708, 510);
   	context.stroke();
   	context.closePath();
 
  	  context.fillStyle = '#FFF';
     context.beginPath();
     context.font = "12px Antenna-Light, Verdana, Serif";
-    context.fillText("CUSTOMERS", 626, 493);
+    context.fillText("CUSTOMERS", 626, 503);
     context.closePath();
 
     context.fillStyle = '#FFF';
     context.beginPath();
     context.font = "12px Antenna-Light, Verdana, Serif";
-    context.fillText("TOTAL CUSTOMERS", 620, 35);
-    context.fillText("TOTAL SEGMENT", 800, 35);
-    context.fillText(totalCustomers, 622, 55);
-    context.fillText(totalSegment, 802, 55);
+    context.fillText("TOTAL CUSTOMERS", 620, 28);
+    context.fillText("TOTAL SEGMENT", 800, 28);
+    context.fillText(totalCustomers, 622, 48);
+    context.fillText(totalSegment, 802, 48);
     context.closePath();
 
     if (textFlag == 1){
