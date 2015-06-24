@@ -151,6 +151,7 @@
   line-height: 40px;
   margin: 0 3px 0 0;
   white-space: nowrap;
+  text-transform: uppercase;
 
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
