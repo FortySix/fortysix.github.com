@@ -24,9 +24,22 @@ galaxy = new function() {
     if (canvas && canvas.getContext) {
       context = canvas.getContext('2d');
 
-      canvas.width = SCREEN_WIDTH;
-      canvas.height = SCREEN_HEIGHT;
-      canvas.style.position = 'relative';
+          //retina canvas
+      if(window.devicePixelRatio >= 2){
+        canvas.width = SCREEN_WIDTH*window.devicePixelRatio;
+        canvas.height = SCREEN_HEIGHT*window.devicePixelRatio;
+        canvas.style.width = "960px";
+        canvas.style.height = "570px";
+        context.scale(window.devicePixelRatio,window.devicePixelRatio);
+      } 
+
+      else {
+        canvas.width = SCREEN_WIDTH;
+        canvas.height = SCREEN_HEIGHT;
+        canvas.style.width = "960px";
+        canvas.style.height = "570px";
+        canvas.style.position = 'relative';
+      }      
 
       document.addEventListener('mousedown', documentMouseDownHandler, false);
 
