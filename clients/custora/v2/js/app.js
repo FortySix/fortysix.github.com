@@ -18,8 +18,8 @@ galaxy = new function() {
   var totalCustomers = 58939933;
   var totalSegment = 0;
 
-  var mouseX = 150;
-  var mouseY = 275;
+  var mouseX = 230;
+  var mouseY = 285;
 
   this.init = function() {
     canvas = document.querySelector("#galaxy");
@@ -49,25 +49,28 @@ galaxy = new function() {
       orbitAlpha = new Cursor();
       orbitAlpha.position.x = 480;
       orbitAlpha.position.y = 285;
-      createParticles(orbitAlpha.position, 500, particles);
+      createParticles(orbitAlpha.position, 500, particles, 0, 1);
       
       orbitBeta = new Cursor();
+      orbitBeta.position.x = 230;
+      orbitBeta.position.y = 285;
 
       orbitGamma = new Cursor();
-      orbitGamma.position.x = 810;
-      orbitGamma.position.y = 275;
+      orbitGamma.position.x = 230;
+      orbitGamma.position.y = 285;
 
       setInterval(loop, 1000/40);
     }
   }
 
-  function createParticles(pos, amt, stack) {
+  function createParticles(pos, amt, stack, forcemin, forcemax) {
     for (var i = 0; i < amt; i++) {
       var p = new Particle();
       p.position.x = pos.x;
       p.position.y = pos.y;
       p.shift.x = pos.x;
       p.shift.y = pos.y;
+      p.force = -(getRandom(forcemin, forcemax) * 2);
 
       stack.push(p);
     }
@@ -108,14 +111,15 @@ galaxy = new function() {
 
     totalCustomers -= 78900
     totalSegment += 78900
-
       
 
     if (particles.length >= 400){
       	particles.splice(0,100);
 	  }
       
-    createParticles(orbitAlpha.position, 100, segmentAlpha);
+    createParticles(orbitAlpha.position, 100, segmentAlpha, 0, 1);
+    orbitAlpha.position.x = 700;
+    orbitAlpha.position.y = 285;
     killFlag = 0;
       
     }
@@ -131,14 +135,17 @@ galaxy = new function() {
       	particles.splice(0,50);
 	  }
 
-	  createParticles(orbitAlpha.position, 200, segmentBeta);
-      riskFlag = 0;
+	  createParticles(orbitAlpha.position, 200, segmentBeta, .7, 1.5);
+    orbitAlpha.position.x = 700;
+    orbitAlpha.position.y = 285;
+    riskFlag = 0;
 
     }
  //////////////////////////
 
     context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
+  if ((textFlag == 0) && (riskTextFlag == 0)){
     context.strokeStyle = 'rgba(255,255,255, .3)';
     context.moveTo(570,480);
   	context.lineTo(600, 510);
@@ -149,8 +156,23 @@ galaxy = new function() {
  	  context.fillStyle = '#FFF';
     context.beginPath();
     context.font = "12px Antenna-Light, Verdana, Serif";
-    context.fillText("CUSTOMERS", 626, 503);
+    context.fillText("CUSTOMERS", 626, 505);
     context.closePath();
+  }
+  else{
+    context.strokeStyle = 'rgba(255,255,255, .3)';
+    context.moveTo(710,440);
+    context.lineTo(730, 470);
+    context.lineTo(848, 470);
+    context.stroke();
+    context.closePath();
+
+    context.fillStyle = '#FFF';
+    context.beginPath();
+    context.font = "12px Antenna-Light, Verdana, Serif";
+    context.fillText("CUSTOMERS", 768, 465);
+    context.closePath();
+  }
 
     context.fillStyle = '#FFF';
     context.beginPath();
@@ -161,11 +183,13 @@ galaxy = new function() {
     context.fillText(totalSegment, 802, 48);
     context.closePath();
 
+
+
     if (textFlag == 1){
     	context.strokeStyle = 'rgba(255,255,255, .3)';
    	  context.moveTo(50,200);
 	    context.lineTo(130, 200);
-	    context.lineTo(145, 220);
+	    context.lineTo(200, 265);
 	    context.stroke();
 	    context.closePath();
 
@@ -178,16 +202,16 @@ galaxy = new function() {
 
     if (riskTextFlag == 1){
     	context.strokeStyle = 'rgba(255,255,255, .3)';
-   	  context.moveTo(660,170);
-	    context.lineTo(765, 170);
-	    context.lineTo(790, 195);
+      context.moveTo(240,410);
+      context.lineTo(260, 440);
+      context.lineTo(378, 440);
 	    context.stroke();
 	    context.closePath();
 
    		context.fillStyle = '#FFF';
    		context.beginPath();
    		context.font = "12px Antenna-Light, Verdana, Serif";
-   		context.fillText("CHURN RISK", 660, 165);
+   		context.fillText("CHURN RISK", 298, 435);
    		context.closePath();
     }
 
@@ -251,7 +275,7 @@ function Particle() {
     y: 0
   };
   this.angle = 0;
-  this.speed = 0.002 + Math.random() * 0.01;
+  this.speed = 0.002 + Math.random() * 0.012;
   this.force = -(Math.random() * 2);
   this.orbit = 1;
   this.opacity = Math.random() + .2;
@@ -278,5 +302,11 @@ function Cursor() {
             expanded = false;
         }
     }
+
+//random number generator
+
+function getRandom(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
 galaxy.init();
