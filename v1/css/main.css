@@ -1,0 +1,274 @@
+/*
+* Created by Matthew Achariam
+* Feb 2013
+*/
+
+
+/* Table of Contents
+==================================================
+    #Header
+    #Banner
+	#Content
+	#Work
+	#Footer
+	#Media Queries
+    */
+
+
+ /* #Header
+================================================== */
+
+.stripe{
+	width: 100%;
+	background: #e9eef6;
+	display: block;
+	height: 4px;
+}
+
+.header img{
+	display: block;
+	margin: 3% auto;
+	max-width: 100px;
+	width: 15%;
+}
+
+ /* Banner
+================================================== */
+
+.banner {
+	background: #000 url(../img/banner.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin: 0 0 80px 0;
+}
+
+
+.essence{
+	font-size: 68px;
+	font-weight: 300;
+	text-shadow: none;
+	color: #fff;
+	display: block;
+	text-align: center;
+	width: 90%;
+	padding: 12% 5%;
+	line-height: 1.2;
+	-webkit-animation: appear 0.5s ease-in;
+	-webkit-animation-delay:.6s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation: appear 0.5s ease-in;
+	-moz-animation-delay:.6s;
+    -moz-animation-fill-mode: both;
+    -ms-animation: appear 0.5s ease-in;
+	-ms-animation-delay:.6s;
+    -ms-animation-fill-mode: both;
+    	animation: appear 0.5s ease-in;
+		animation-delay:.6s;
+    	animation-fill-mode: both;
+}
+
+@-moz-keyframes fadeIn {
+	0% { background-position: -1px; }
+	40% {background-position: -140px;}
+	60% {background-position: -140px;}
+	100% {background-position: -1px;}
+}
+
+@-ms-keyframes fadeIn {
+	0% { background-position: -1px; }
+	40% {background-position: -140px;}
+	60% {background-position: -140px;}
+	100% {background-position: -1px;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% { background-position: -1px; }
+	40% {background-position: -140px;}
+	60% {background-position: -140px;}
+	100% {background-position: -1px;}
+}
+
+.twinkle {
+	position: absolute;
+	background: url(../img/star.png);
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+	-webkit-animation: fadeIn 2s steps(7, end) infinite forwards;
+	-moz-animation: fadeIn 2s steps(7, end) infinite forwards;
+	-ms-animation: fadeIn 2s steps(7, end) infinite forwards;
+}
+
+ /* #Content
+================================================== */
+
+.about {
+	padding: 120px 0;
+	background: #fff;
+}
+
+
+.bluetitle{
+	color: #425895;
+	margin: 40px 0 30px 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.leftbar p{
+	font-size: 32px;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+.bluebutton {
+	background: #5998ff;
+	color: #fff;
+	font-size: .8em;
+	padding: .6em 1.4em;
+	font-weight: 700;
+	margin: 10px auto;
+	text-shadow: none;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.bluebutton:hover{
+	background: #425895;
+	color: #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+}
+
+ /* #Work
+================================================== */
+
+.work{
+	padding: 0 0 120px 0;
+}
+
+.work img{
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    opacity: 0.8;
+}
+
+.work img:hover{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+}
+
+.work p{
+	padding: 7% 5%;
+}
+
+.work img{
+	margin-top: 20px;
+}
+
+ /* #Clients
+================================================== */
+
+.clients{
+	padding: 90px 0;
+}
+
+.clients img{
+	opacity: .4;
+	margin: 0 auto;
+	display: block;
+}
+
+.clientlogos{
+	margin: 60px auto 20px auto;
+}
+
+.nysci{
+margin: -15px 0 0 0;
+}
+
+.sbp{
+margin: 15px 0 0 0;
+}
+
+ /* #Footer
+================================================== */
+
+.footer p{
+	font-size: 12px;
+	padding: 5% 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+			.clients img{
+				width: 180px;
+				margin-bottom: 40px;
+			}
+
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		.leftbar p{
+			font-size: 24px;
+			line-height: 1.4em;
+			font-weight: 300;
+		}
+
+		.banner{
+			margin-bottom: 20px;
+		}
+
+		.leftbar {
+			text-align: center;
+		}
+
+		.rightbar {
+			text-align: center;
+		}
+
+		.bluetitle {
+			margin-bottom: 20px;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: center;
+		}
+
+	}
