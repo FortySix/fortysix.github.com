@@ -16,11 +16,10 @@
  /* #Header
 ================================================== */
 
-
+.header{margin: 30px auto;}
 .header img{
 	height: 100px;
 	width: 100px;
-	margin: 30px auto;
 
 }
 
